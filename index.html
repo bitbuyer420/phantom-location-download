@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Download Phantom for macOS — local iOS Core Location testing over USB." />
+  <meta name="theme-color" content="#070b12" />
+  <title>Phantom — iOS Location Testing for macOS</title>
+  <link rel="icon" href="/icon.png" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav shell">
+    <a class="brand" href="#top" aria-label="Phantom home">
+      <img src="/icon.png" alt="" width="38" height="38" />
+      <span>Phantom</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#features">Features</a>
+      <a href="#security">Security</a>
+      <a href="#install">Install</a>
+      <a class="nav-download" href="https://github.com/bitbuyer420/phantom-location-download/releases/download/v1.1.0/Phantom-1.1.0-arm64.dmg">Download</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> Version 1.1.0 · Routes, pause/resume &amp; satellite</div>
+        <h1>Test anywhere.<br><span>Stay local.</span></h1>
+        <p class="lede">A focused macOS utility for testing iOS Core Location on a USB-connected iPhone. Static points, road routes, flight paths, and persistent sessions—without installing anything on the phone.</p>
+        <div class="hero-actions">
+          <a class="download-btn" href="https://github.com/bitbuyer420/phantom-location-download/releases/download/v1.1.0/Phantom-1.1.0-arm64.dmg">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.1 12.7c0-2.7 2.2-4 2.3-4.1-1.3-1.9-3.3-2.1-4-2.1-1.7-.2-3.3 1-4.1 1s-2.1-1-3.5-1c-1.8 0-3.5 1.1-4.4 2.7-1.9 3.3-.5 8.1 1.3 10.7.9 1.3 1.9 2.7 3.3 2.6 1.3-.1 1.8-.8 3.5-.8 1.6 0 2.1.8 3.5.8 1.5 0 2.4-1.3 3.2-2.6 1-1.5 1.4-2.9 1.4-3-.1 0-2.5-1-2.5-4.2ZM14.3 4.7c.7-.9 1.2-2.1 1.1-3.2-1.1.1-2.4.7-3.2 1.6-.7.8-1.3 2-1.1 3.1 1.2.1 2.4-.6 3.2-1.5Z"/></svg>
+            <span><strong>Download for macOS</strong><small>Apple silicon · DMG · 168 MB</small></span>
+          </a>
+          <a class="secondary-btn" href="#install">Installation guide</a>
+        </div>
+        <div class="release-note"><span>Community build</span> Ad-hoc signed, not Apple-notarized. One-time Control-click → Open required.</div>
+      </div>
+
+      <div class="product-stage" aria-label="Phantom application preview">
+        <div class="glow glow-one"></div><div class="glow glow-two"></div>
+        <div class="app-window">
+          <div class="titlebar"><i></i><i></i><i></i><b>Phantom</b></div>
+          <div class="app-toolbar">
+            <div class="device-pill"><span></span> iPhone connected</div>
+            <div class="search-pill">Search a place or address…</div>
+            <div class="mode-pill"><b>Static</b><span>Route</span></div>
+          </div>
+          <div class="map-ui">
+            <div class="map-grid"></div>
+            <svg class="route-line" viewBox="0 0 600 400" preserveAspectRatio="none" aria-hidden="true"><path d="M42,338 C112,264 122,183 207,197 S345,311 398,220 S482,86 568,72"/><circle cx="42" cy="338" r="8"/><circle cx="568" cy="72" r="8"/></svg>
+            <div class="location-card"><span class="live-dot"></span><div><small>LOCATION HOLD</small><strong>Persistent session active</strong></div></div>
+            <div class="route-card"><small>ROUTE CONTROL</small><div class="metric"><span>Mode</span><b>Driving</b></div><div class="metric"><span>Speed</span><b>37 mph</b></div><div class="metric"><span>Waypoints</span><b>4</b></div><button>Start route</button></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust shell" aria-label="Product assurances">
+      <div><b>127.0.0.1</b><span>Loopback-only control</span></div>
+      <div><b>192-bit</b><span>New token every launch</span></div>
+      <div><b>Root-owned</b><span>Protected USB helper</span></div>
+      <div><b>Zero</b><span>Phantom analytics</span></div>
+    </section>
+
+    <section class="section shell" id="features">
+      <div class="section-heading"><span>Built for testing</span><h2>The controls you need.<br>Nothing you don’t.</h2></div>
+      <div class="feature-grid">
+        <article class="feature featured"><div class="feature-icon pin-icon">●</div><h3>Static location</h3><p>Choose a coordinate, address, or place and maintain the simulated point through temporary tunnel interruptions.</p><div class="mini-ui"><span>Persistent hold</span><b>Active</b></div></article>
+        <article class="feature"><div class="feature-icon">⌁</div><h3>Road-aware routes</h3><p>Build multi-point road routes with adjustable speed, round trips, live extensions, and arrival behavior.</p></article>
+        <article class="feature"><div class="feature-icon">↗</div><h3>Flight paths</h3><p>Test straight great-circle movement when a road route is not appropriate.</p></article>
+        <article class="feature"><div class="feature-icon">◎</div><h3>Visible device state</h3><p>See the connected model, iOS version, tunnel readiness, and current simulated-location state.</p></article>
+        <article class="feature"><div class="feature-icon">↻</div><h3>Automatic recovery</h3><p>Reacquires transient USB tunnel drops and resumes a saved static session after application reconnects.</p></article>
+        <article class="feature"><div class="feature-icon">⌘</div><h3>No phone install</h3><p>Uses Apple’s developer location-simulation service. No jailbreak and no additional iPhone application.</p></article>
+      </div>
+    </section>
+
+    <section class="security-section" id="security">
+      <div class="shell security-layout">
+        <div><span class="kicker">Designed defensively</span><h2>Local control.<br>Protected privilege.</h2><p>Phantom’s GUI communicates with a backend bound exclusively to your Mac. The privileged USB tunnel runtime is copied into a root-owned system directory and cannot be replaced by a standard user.</p><a href="/security.html">Read the security architecture →</a></div>
+        <div class="terminal-card">
+          <div class="terminal-top"><span></span><span></span><span></span><b>Security model</b></div>
+          <code><i>CONTROL PLANE</i><br>bind&nbsp;&nbsp;&nbsp;&nbsp;127.0.0.1 only<br>token&nbsp;&nbsp;&nbsp;random per launch<br>origin&nbsp;&nbsp;loopback required<br><br><i>PRIVILEGED HELPER</i><br>owner&nbsp;&nbsp;&nbsp;root:wheel<br>write&nbsp;&nbsp;&nbsp;owner only<br>source&nbsp;&nbsp;protected system copy<br><br><em>✓ no account&nbsp;&nbsp;✓ no analytics</em></code>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell install" id="install">
+      <div class="section-heading"><span>Three steps</span><h2>From download to ready.</h2></div>
+      <div class="steps">
+        <article><b>01</b><h3>Install Phantom</h3><p>Open the DMG and copy Phantom to Applications. Control-click → Open the first time because version 1.1.0 is not Apple-notarized.</p></article>
+        <article><b>02</b><h3>Prepare the iPhone</h3><p>Enable Developer Mode, connect with a USB data cable, unlock the phone, and accept “Trust This Computer.”</p></article>
+        <article><b>03</b><h3>Enable USB control</h3><p>Approve the one-time administrator prompt. Phantom installs its tunnel runtime into a protected root-owned directory.</p></article>
+      </div>
+      <div class="requirements"><strong>Requires</strong><span>Apple silicon Mac</span><span>macOS 11+</span><span>iOS 17.4+</span><span>Developer Mode</span><span>USB data cable</span></div>
+    </section>
+
+    <section class="section shell integrity">
+      <div><span class="kicker">Verify before opening</span><h2>Release integrity</h2><p>Compare the downloaded file against the published SHA-256 checksum.</p></div>
+      <div class="hash-box"><code id="checksum">69d0389211758a8484ca90453f9c0b75f584d8f68cfd82f1813fe0b92babc8b5</code><button id="copyHash" type="button">Copy</button></div>
+    </section>
+
+    <section class="section shell faq">
+      <div class="section-heading"><span>Before you download</span><h2>Clear answers.</h2></div>
+      <details><summary>Does Phantom make an iPhone anonymous?</summary><p>No. It changes app-visible Core Location for development and QA. It does not alter carrier records, cell towers, IP geolocation, emergency location, physical cameras, phone-number records, or historical account data.</p></details>
+      <details><summary>Does Phantom collect my locations?</summary><p>Phantom has no first-party analytics or account service. Bookmarks and recent points stay on the Mac. OpenFreeMap, Nominatim, and OSRM receive map, search, or routing requests; review the <a href="/privacy.html">privacy notice</a> before entering sensitive locations.</p></details>
+      <details><summary>Why does macOS show an unidentified-developer warning?</summary><p>This community release is ad-hoc signed and checksummed but not Apple-notarized. Control-click Phantom in Applications and choose Open once. Never disable Gatekeeper globally.</p></details>
+      <details><summary>What happens when I click Reset?</summary><p>Phantom stops the active hold or route, clears Apple’s location simulation service, and restores normal Core Location behavior.</p></details>
+    </section>
+
+    <section class="cta shell">
+      <img src="/icon.png" width="88" height="88" alt="Phantom icon" />
+      <div><span>Phantom 1.1.0</span><h2>Ready to test somewhere else?</h2></div>
+      <a class="download-btn compact" href="https://github.com/bitbuyer420/phantom-location-download/releases/download/v1.1.0/Phantom-1.1.0-arm64.dmg"><strong>Download DMG</strong><small>Apple silicon · 168 MB</small></a>
+    </section>
+  </main>
+
+  <footer class="shell"><div class="brand"><img src="/icon.png" alt="" width="30" height="30" /><span>Phantom</span></div><p>For development and QA on devices you own or are authorized to test.</p><nav><a href="/privacy.html">Privacy</a><a href="/security.html">Security</a><a href="https://github.com/bitbuyer420/phantom-location-download/releases">Releases</a></nav></footer>
+  <script src="/script.js"></script>
+</body>
+</html>

